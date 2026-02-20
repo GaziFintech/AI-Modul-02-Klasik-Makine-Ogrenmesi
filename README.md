@@ -6,73 +6,83 @@ Veriyi temizlemeyi ve görselleştirmeyi öğrendik; şimdi ise o verinin içind
 
 ---
 
-## 📅 6 Haftalık Eğitim Programı
+## 📋 Eğitim İçeriği ve Bölümler
 
-### 🔹 1. & 2. Hafta: ML Temelleri ve Regresyon
-* **Kavramlar:** Bias-Variance Tradeoff, Overfitting/Underfitting, Cross-Validation.
-* **Lineer Regresyon:** Least Squares matematiği ve Sıfırdan Python Implementasyonu.
-* **Regularization:** Ridge, Lasso ve Elastic Net mantığı.
-* **Lojistik Regresyon:** Sigmoid fonksiyonu ve Multi-class classification.
+Müfredatın bu aşaması, global numaralandırma sistemindeki 6. bölümden başlar ve 12. bölüme kadar devam eder. Detaylı kaynaklar için [Müfredat Detay Dosyası'na](./module-2-details.md) göz atabilirsiniz.
 
-### 🔹 3. Hafta: Sınıflandırma Algoritmaları
-* **k-NN:** Mesafe metrikleri ve komşuluk algoritması.
-* **Karar Ağaçları (Decision Trees):** Entropy, Gini Impurity ve Information Gain.
-* **SVM & Naive Bayes:** Hyperplane mantığı ve Bayes Teoremi uygulamaları.
+### 🔹 Bölüm 6: Makine Öğrenmesine Giriş
+* **6-1.** Temel Kavramlar (Denetimli vs Denetimsiz Öğrenme, Sınıflandırma vs Regresyon).
+* **6-1-4.** Eğitim, doğrulama ve test kümeleri mantığı.
+* **6-1-5.** Aşırı öğrenme (Overfitting) ve az öğrenme (Underfitting).
+* **6-2.** Basit Makine Öğrenmesi Algoritmaları (Lineer ve Multiple Regresyon Giriş).
 
-### 🔹 4. Hafta: Ensemble Methods (Topluluk Öğrenmesi)
-* **Bagging:** Random Forest algoritması ve Feature Importance.
-* **Boosting:** AdaBoost, Gradient Boosting, XGBoost ve LightGBM kullanımı.
+### 🔹 Bölüm 7: Makine Öğrenmesi Temelleri
+* **7-1.** Bias-Variance Tradeoff ve Cross-validation stratejileri.
+* **7-2.** Veri Ön İşleme: Feature scaling (Normalization, Standardization) ve Encoding (One-hot, Label).
+* **7-2-4.** Boyut azaltma (Dimensionality Reduction) temel kavramları.
 
-### 🔹 5. Hafta: Denetimsiz Öğrenme (Unsupervised)
-* **Clustering:** K-means (sıfırdan implementasyon) ve Hierarchical Clustering.
-* **Boyut Azaltma:** PCA (Principal Component Analysis) matematiği ve görselleştirme.
+### 🔹 Bölüm 8: Supervised Learning - Regresyon
+* **8-1.** Lineer Regresyon: Matematiksel temeller (Least Squares) ve Gradient Descent.
+* **8-1-3.** **Sıfırdan (From Scratch) Python implementasyonu.**
+* **8-3.** Regularization: Ridge ($L2$), Lasso ($L1$) ve Elastic Net matematiksel altyapısı.
+* **8-4.** Lojistik Regresyon: Sigmoid fonksiyonu ve Multi-class classification.
 
-### 🔹 6. Hafta: Model Değerlendirme ve Kaggle
-* **Metrikler:** Confusion Matrix, Precision, Recall, F1-Score ve ROC-AUC.
-* **Tuning:** Grid Search ve Random Search ile hiperparametre optimizasyonu.
-* **Uygulama:** Titanic veya Ev Fiyatları tahmini gibi uçtan uca Kaggle projeleri.
+### 🔹 Bölüm 9: Supervised Learning - Sınıflandırma
+* **9-1.** k-Nearest Neighbors (k-NN): Mesafe metrikleri ve sıfırdan implementasyon.
+* **9-2.** Karar Ağaçları (Decision Trees): Entropy, Gini Impurity ve Information Gain.
+* **9-3.** Support Vector Machines (SVM): Hyperplane ve Kernel Trick mantığı.
+* **9-4.** Naive Bayes: Bayes Teoremi ve Laplace Smoothing.
+
+### 🔹 Bölüm 10: Ensemble Methods
+* **10-1.** Bagging ve Random Forest: Bootstrap sampling ve Feature Importance analizi.
+* **10-2.** Boosting: AdaBoost, Gradient Boosting ve XGBoost/LightGBM/CatBoost kullanımı.
+
+### 🔹 Bölüm 11: Unsupervised Learning
+* **11-1.** Clustering: K-means (Sıfırdan implementasyon), Hierarchical ve DBSCAN.
+* **11-2.** Dimensionality Reduction: PCA (Principal Component Analysis) ve SVD matematiği.
+
+### 🔹 Bölüm 12: Model Değerlendirme ve Seçimi
+* **12-1.** Metrikler: Confusion Matrix, Precision, Recall, F1-Score ve ROC-AUC.
+* **12-2.** Model Seçimi: Grid Search ve Random Search ile hiperparametre optimizasyonu.
 
 ---
 
 ## 📐 Matematiksel Odak: "From Scratch"
 
 Bu modülde aşağıdaki algoritmaların en az bir kez hiçbir ML kütüphanesi (Scikit-learn vb.) kullanmadan sadece **NumPy** ve temel **Python** ile kodlanması beklenmektedir:
-1. **Lineer Regresyon** (Gradient Descent ile)
-2. **Lojistik Regresyon**
-3. **K-Means Clustering**
+1. **Lineer Regresyon** (Gradient Descent ile) - *Bölüm 8*
+2. **Lojistik Regresyon** - *Bölüm 8*
+3. **K-Means Clustering** - *Bölüm 11*
 
 ---
 
 ## 🚀 Görevler ve Teslimat
 
-| Konu | Proje Görevi |
+| İlgili Bölüm | Proje Görevi |
 | :--- | :--- |
-| **Regresyon** | Bir finansal veri seti (Örn: Borsa İstanbul hisse verisi) üzerinden fiyat tahmini. |
-| **Sınıflandırma** | Kredi kartı dolandırıcılığı (Fraud Detection) tespiti veya Müşteri Terk (Churn) analizi. |
-| **Clustering** | Hisse senetlerini risk/getiri profillerine göre gruplandırma. |
-| **Final** | Seçilen bir Kaggle veri setinde en iyi modelin (XGBoost/Random Forest vb.) kurulması. |
+| **Bölüm 8** | Finansal veri seti (Örn: BIST verisi) üzerinden fiyat tahmini. |
+| **Bölüm 9** | Kredi kartı dolandırıcılığı (Fraud Detection) veya Churn analizi. |
+| **Bölüm 11** | Hisse senetlerini risk/getiri profillerine göre gruplandırma. |
+| **Bölüm 12** | Kaggle veri setinde en iyi modelin (XGBoost/Random Forest vb.) kurulması. |
 
 ### 📥 Teslim Süreci
 * Çalışmalarını `submissions/Ad-Soyad/` klasörüne ekle.
 * PR açarken hangi algoritmayı **"sıfırdan"** yazdığını mutlaka belirt.
-* 📖 *Kılavuz: Pull Request Rehberi*
+* 📖 [Pull Request Rehberi](../../guides/pull-request-guide.md)
 
 ---
 
 ## 🛠️ Kurulum ve Gereksinimler
 
-Bu modül için Scikit-learn kütüphanesi temel aracımız olacaktır:
-
 ```bash
 pip install scikit-learn scipy statsmodels
 ```
+
 ---
 
 ## 💡 FinTech Bağlantısı
 
 Makine öğrenmesi finans dünyasında; **kredi skorlama, algoritmik işlem stratejileri, risk yönetimi ve pazar segmentasyonu** gibi alanlarda kritik rol oynar. Bu modülde yaptığımız projeler, bu gerçek dünya sorunlarına çözüm üretmeyi hedefler.
-
----
 
 > "Algoritmayı kullanan değil, algoritmayı anlayan ve yöneten kazanır."
 
