@@ -6,71 +6,100 @@ Veriyi temizlemeyi ve görselleştirmeyi öğrendik; şimdi ise o verinin içind
 
 ---
 
-## 📋 Eğitim İçeriği ve Bölümler
 
-Müfredatın bu aşaması, global numaralandırma sistemindeki 6. bölümden başlar ve 12. bölüme kadar devam eder. Detaylı kaynaklar için [Müfredat Detay Dosyası'na](./module-2-details.md) göz atabilirsiniz.
+### 🔹 5. Bölüm: Makine Öğrenmesi Temelleri ve Ön İşleme
+* **Temel Kavramlar:** Denetimli ve Denetimsiz öğrenme, regresyon vs. sınıflandırma farkları.
+* **Model Performansı:** Aşırı öğrenme (Overfitting), az öğrenme (Underfitting) ve Bias-Variance dengesi.
+* **Doğrulama:** Veri seti bölme (Train/Test) ve Çapraz Doğrulama (Cross-Validation) teknikleri.
+* **Veri Ön İşleme:** Ölçeklendirme (Scaling), Kategorik kodlama (Encoding) ve Özellik seçimi.
+---
+### 🔹 6. Bölüm: Denetimli Öğrenme - Regresyon
+* **Lineer Regresyon:** En küçük kareler yöntemi, Gradient Descent ve model metrikleri ($MSE$, $R^2$).
+* **Polinomial Regresyon:** Doğrusal olmayan ilişkiler ve özellik dönüşümü.
+* **Düzenlileştirme (Regularization):** Lasso ($L_1$), Ridge ($L_2$) ve Elastic Net yöntemleri.
+* **Lojistik Regresyon:** Sigmoid fonksiyonu, sınıflandırma mantığı ve Multi-class yaklaşımı.
+---
+### 🔹 7. Bölüm: Denetimli Öğrenme - Sınıflandırma
+* **Mesafe ve Ağaç Tabanlı Modeller:** k-NN (Mesafe metrikleri) ve Karar Ağaçları (Entropi, Gini).
+* **Destek Vektör Makineleri (SVM):** Hiper düzlemler, destek vektörleri ve Kernel Trick.
+* **Olasılıksal Modeller:** Naive Bayes teoremi ve varyasyonları (Gaussian, Bernoulli).
+* **Model Optimizasyonu:** Budama (Pruning) ve boyut laneti ile mücadele.
+---
+### 🔹 8. Bölüm: Topluluk Yöntemleri (Ensemble Methods)
+* **Bagging:** Bootstrap Sampling ve Random Forest algoritması.
+* **Boosting:** AdaBoost, Gradient Boosting ve modern kütüphaneler (XGBoost, LightGBM, CatBoost).
+* **Analiz:** Özellik önem sırası (Feature Importance) hesaplama teknikleri.
+---
+### 🔹 9. Bölüm: Denetimsiz Öğrenme (Unsupervised)
+* **Kümeleme (Clustering):** K-means (Elbow metodu), Hiyerarşik kümeleme ve DBSCAN.
+* **Boyut Azaltma:** Temel Bileşen Analizi (PCA), SVD ve t-SNE ile görselleştirme.
+* **Performans:** Silhouette skoru ve küme geçerlilik analizleri.
+---
+### 🔹 10. Bölüm: Model Değerlendirme ve Seçimi
+* **Sınıflandırma Metrikleri:** Hata matrisi (Confusion Matrix), Hassasiyet, Duyarlılık ve F1-Skor.
+* **Eğri Analizleri:** ROC Eğrisi ve AUC (Alan ölçümü) değerleri.
+* **Hiperparametre Ayarlama:** Grid Search ve Random Search stratejileri.
+* **Öğrenme Eğrileri:** Modelin veri miktaruna tepkisini analiz etme.
+---
 
-### 🔹 Bölüm 6: Makine Öğrenmesine Giriş
-* **6-1.** Temel Kavramlar (Denetimli vs Denetimsiz Öğrenme, Sınıflandırma vs Regresyon).
-* **6-1-4.** Eğitim, doğrulama ve test kümeleri mantığı.
-* **6-1-5.** Aşırı öğrenme (Overfitting) ve az öğrenme (Underfitting).
-* **6-2.** Basit Makine Öğrenmesi Algoritmaları (Lineer ve Multiple Regresyon Giriş).
-
-### 🔹 Bölüm 7: Makine Öğrenmesi Temelleri
-* **7-1.** Bias-Variance Tradeoff ve Cross-validation stratejileri.
-* **7-2.** Veri Ön İşleme: Feature scaling (Normalization, Standardization) ve Encoding (One-hot, Label).
-* **7-2-4.** Boyut azaltma (Dimensionality Reduction) temel kavramları.
-
-### 🔹 Bölüm 8: Supervised Learning - Regresyon
-* **8-1.** Lineer Regresyon: Matematiksel temeller (Least Squares) ve Gradient Descent.
-* **8-1-3.** **Sıfırdan (From Scratch) Python implementasyonu.**
-* **8-3.** Regularization: Ridge ($L2$), Lasso ($L1$) ve Elastic Net matematiksel altyapısı.
-* **8-4.** Lojistik Regresyon: Sigmoid fonksiyonu ve Multi-class classification.
-
-### 🔹 Bölüm 9: Supervised Learning - Sınıflandırma
-* **9-1.** k-Nearest Neighbors (k-NN): Mesafe metrikleri ve sıfırdan implementasyon.
-* **9-2.** Karar Ağaçları (Decision Trees): Entropy, Gini Impurity ve Information Gain.
-* **9-3.** Support Vector Machines (SVM): Hyperplane ve Kernel Trick mantığı.
-* **9-4.** Naive Bayes: Bayes Teoremi ve Laplace Smoothing.
-
-### 🔹 Bölüm 10: Ensemble Methods
-* **10-1.** Bagging ve Random Forest: Bootstrap sampling ve Feature Importance analizi.
-* **10-2.** Boosting: AdaBoost, Gradient Boosting ve XGBoost/LightGBM/CatBoost kullanımı.
-
-### 🔹 Bölüm 11: Unsupervised Learning
-* **11-1.** Clustering: K-means (Sıfırdan implementasyon), Hierarchical ve DBSCAN.
-* **11-2.** Dimensionality Reduction: PCA (Principal Component Analysis) ve SVD matematiği.
-
-### 🔹 Bölüm 12: Model Değerlendirme ve Seçimi
-* **12-1.** Metrikler: Confusion Matrix, Precision, Recall, F1-Score ve ROC-AUC.
-* **12-2.** Model Seçimi: Grid Search ve Random Search ile hiperparametre optimizasyonu.
+### 🔹 11. Bölüm: Denetimsiz Öğrenme (Unsupervised Learning)
+* **Kümeleme (Clustering):** K-means (Elbow metodu), Hiyerarşik kümeleme (Dendrogram) ve yoğunluk tabanlı DBSCAN.
+* **Boyut Azaltma:** Temel Bileşen Analizi (PCA), Tekil Değer Ayrışımı (SVD) ve t-SNE ile görselleştirme.
+* **Matematiksel Temel:** Özdeğer (Eigenvalue) ve Özvektör (Eigenvector) ayrışımı.
+* **Performans Analizi:** Silhouette skoru ile küme kalitesinin ölçülmesi.
 
 ---
 
-## 📐 Matematiksel Odak: "From Scratch"
-
-Bu modülde aşağıdaki algoritmaların en az bir kez hiçbir ML kütüphanesi (Scikit-learn vb.) kullanmadan sadece **NumPy** ve temel **Python** ile kodlanması beklenmektedir:
-1. **Lineer Regresyon** (Gradient Descent ile) - *Bölüm 8*
-2. **Lojistik Regresyon** - *Bölüm 8*
-3. **K-Means Clustering** - *Bölüm 11*
-
+### 🔹 12. Bölüm: Model Değerlendirme ve Seçimi
+* **Sınıflandırma Metrikleri:** Hata Matrisi (Confusion Matrix), Accuracy, Precision, Recall ve F1-Score.
+* **Gelişmiş Analiz:** ROC Eğrisi ve AUC (Area Under Curve) hesaplamaları.
+* **Hiperparametre Optimizasyonu:** Grid Search ve Random Search stratejileri.
+* **Model Tanılama:** Öğrenme Eğrileri (Learning Curves) ve hiperparametre ayarlama (Tuning) teknikleri.
 ---
 
-## 🚀 Görevler ve Teslimat
 
-| İlgili Bölüm | Proje Görevi |
-| :--- | :--- |
-| **Bölüm 8** | Finansal veri seti (Örn: BIST verisi) üzerinden fiyat tahmini. |
-| **Bölüm 9** | Kredi kartı dolandırıcılığı (Fraud Detection) veya Churn analizi. |
-| **Bölüm 11** | Hisse senetlerini risk/getiri profillerine göre gruplandırma. |
-| **Bölüm 12** | Kaggle veri setinde en iyi modelin (XGBoost/Random Forest vb.) kurulması. |
+## 📚 Öğrenim Kaynakları
 
-### 📥 Teslim Süreci
-* Çalışmalarını `submissions/Ad-Soyad/` klasörüne ekle.
-* PR açarken hangi algoritmayı **"sıfırdan"** yazdığını mutlaka belirt.
-* 📖 [Pull Request Rehberi](../../guides/pull-request-guide.md)
+Öğrenirken kullanabileceğiniz tavsiye edilen kaynaklar:
+* 🎥 **Ayrıntılı Kaynak Listesi:** [Kaynak Matrisi](./Mufredat(curriculum)/module-1-details.md)
+* 📖 **Dokümantasyon:** [Resmi Python Dokümanları](https://docs.python.org/3/)
+* 📑 **Cheat Sheets:** Repo içindeki `resources/` klasörüne göz atın.
 
+
+
+## 🚀 Alıştırmalar, Ödevler ve Proje Teslimi
+
+Her hafta veya ana konu bitiminde yapman gereken mini projeler aşağıdadır:
+
+
+| No | Konu Başlığı | Codewars | HackerRank | LeetCode | Ödev | 
+|:---|:---|:---|:---|:---|:---|
+| **6.1 & 7.1** | Makine Öğrenmesi Temel Kavramları | [![Codewars](https://img.shields.io/badge/Codewars-B1361E?logo=codewars&logoColor=fff)](https://www.codewars.com/kata/56efab15740d301ab40002ee) | [![HackerRank](https://img.shields.io/badge/-HackerRank-%232EC866?style=for-the-badge&logo=HackerRank&logoColor=white)](https://www.hackerrank.com/domains/ai?filters%5Bsubdomains%5D%5B%5D=machine-learning&filters%5Bdifficulty%5D%5B%5D=easy&filters%5Bdifficulty%5D%5B%5D=medium) | [![LeetCode](https://img.shields.io/badge/LeetCode-000000?logo=LeetCode&logoColor=#d16c06)](https://platform.stratascratch.com/coding?code_type=2&job_positions=5) | [Link] |  
+| **7.2** | Veri Ön İşleme (Preprocessing) | [![Codewars](https://img.shields.io/badge/Codewars-B1361E?logo=codewars&logoColor=fff)](https://www.codewars.com/kata/5695995cc26a1e90fe00004d) | [![HackerRank](https://img.shields.io/badge/-HackerRank-%232EC866?style=for-the-badge&logo=HackerRank&logoColor=white)](https://www.hackerrank.com/domains/ai?filters%5Bsubdomains%5D%5B%5D=machine-learning&filters%5Bdifficulty%5D%5B%5D=hard) | [![LeetCode](https://img.shields.io/badge/LeetCode-000000?logo=LeetCode&logoColor=#d16c06)](https://platform.stratascratch.com/coding?code_type=2&job_positions=5&difficulties=3) | [Link] |  
+| **8.1** | Lineer Regresyon | [Link] | [Link] | [Link] | [Link] |
+| **8.2** | Polinomial Regresyon | [Link] | [Link] | [Link] | [Link] |  
+| **8.3** | Regularization (Düzenlileştirme) | [Link] | [Link] | [Link] | [Link] |
+| **8.4** | Lojistik Regresyon (Sınıflandırma Temelli) | [Link] | [Link] | [Link] | [Link] |
+| **9.1** | k-Nearest Neighbors (k-NN) | [Link] | [Link] | [Link] | [Link] |  
+| **9.2** | Karar Ağaçları (Decision Trees) | [Link] | [Link] | [Link] | [Link] |
+| **9.3** | Support Vector Machines (SVM) | [Link] | [Link] | [Link] | [Link] |  
+| **9.4** | Naive Bayes | [Link] | [Link] | [Link] | [Link] |
+| **10.1** | Bagging ve Random Forest | [Link] | [Link] | [Link] | [Link] |
+| **10.2** | Boosting | [Link] | [Link] | [Link] | [Link] |
+| **11.1** | Kümeleme (Clustering) | [Link] | [Link] | [Link] | [Link] |
+| **11.2** | Boyut Azaltma (Dimensionality Reduction) | [Link] | [Link] | [Link] | [Link] |
+| **12.1** | Değerlendirme Metrikleri | [Link] | [Link] | [Link] | [Link] |
+| **12.2** | Model Seçimi ve Hiperparametre Optimizasyonu | [Link] | [Link] | [Link] | [Link] |
 ---
+
+### 📥 Nasıl Teslim Ederim?
+1. Bu depoyu **Fork** et.
+2. Kendi isminle bir **Branch** oluştur.
+3. Çalışmalarını `submissions/Ad-Soyad/` klasörüne yükle.
+4. **Pull Request** açarak liderine onaya gönder.
+   > *Detaylı anlatım için: Ana Rehberdeki [github-setup.md](./Rehberler(Guides)/github-setup.md) dosyasını oku.*
+
+
 
 ## 🛠️ Kurulum ve Gereksinimler
 
@@ -78,7 +107,13 @@ Bu modülde aşağıdaki algoritmaların en az bir kez hiçbir ML kütüphanesi 
 pip install scikit-learn scipy statsmodels
 ```
 
----
+## ❓ Sorun mu Var?
+
+Eğer bir konuda takılırsan:
+* Organizasyonun ana sayfasındaki **[Discussions](https://github.com/orgs/GaziFintech/discussions)** kısmından arkadaşlarına ve proje ekibine sorabilirsin.
+
+Eğer teknik bir problem yaşarsan:
+* **"New Issue" diyerek** sorunu bizlere ilet.
 
 ## 💡 FinTech Bağlantısı
 
@@ -86,4 +121,4 @@ Makine öğrenmesi finans dünyasında; **kredi skorlama, algoritmik işlem stra
 
 > "Algoritmayı kullanan değil, algoritmayı anlayan ve yöneten kazanır."
 
-**[Gazi Finansal Teknolojiler Topluluğu]**
+**Gazi Finansal Teknolojiler Topluluğu - Proje Ekip Lideri Arif Furkan Aytekin**
